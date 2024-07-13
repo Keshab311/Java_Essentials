@@ -12,7 +12,15 @@ public class QuotaChecker {
         System.out.println("How many sales did you make this week?");
         Scanner sc = new Scanner(System.in);
         int sales = sc.nextInt();
+
+        //validity of the sales input
+        if(sales < 0)
+        {
+            System.out.println("Invalid input! please enter sales correctly!");
+            System.exit(0);
+        }
         sc.close();
+        
 
         //Quick detour for the bonus earners
         if(sales>=quota){
