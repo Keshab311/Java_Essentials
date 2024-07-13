@@ -1,4 +1,4 @@
-package gross_calculator;
+package games;
 
 import java.util.Scanner;
 
@@ -18,7 +18,7 @@ public class FillInTheBlanks {
         String adjective = sc.next();
 
         sc.close();
-        
+
         System.out.println("On a "+adjective+" "+season+" "+"day, I drink a minimum of "+cups+" "+"cups of coffee.");
     }
 }
