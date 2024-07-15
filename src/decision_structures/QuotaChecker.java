@@ -20,7 +20,7 @@ public class QuotaChecker {
             System.exit(0);
         }
         sc.close();
-        
+
 
         //Quick detour for the bonus earners
         if(sales>=quota){
