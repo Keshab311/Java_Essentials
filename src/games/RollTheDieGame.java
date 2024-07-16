@@ -36,12 +36,15 @@ public class RollTheDieGame {
             space = space + die; // the space value is computed.
             if ((space) == 20) {
                 System.out.println("Roll #" + (i+1) + ":" + " " + "You've rolled a " + die + "." + " " + "You're on space 20. Congrats, you win!");
+                break;
             }
             else{
                 System.out.println("Roll #"+ (i+1)+":"+" "+"You've rolled a "+die+". You are now on space "+space+" "+"and have "+(20-space)+" "+"more to go.");
 
             }
         }
-        System.out.println("Sorry! You are at space "+space+"."+" "+"Better luck next time!!");
+        if(space != 20) {
+            System.out.println("Sorry! You are at space " + space + "." + " " + "Better luck next time!!");
+        }
     }
 }
